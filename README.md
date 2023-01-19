@@ -8,7 +8,7 @@ The bot makes queries to GraphQL to get back UniswapV3 pairs data. Then proceeds
 The pairs having surface arbitrage and inspected to have suffiect depth to make profitable trades. If found profitable, you can proceed to make calls to the uniswap 
 contract my running the scripts provided.
 
-##Scripts to use the bot
+## Scripts to use the bot
 1. Start pair calculations
 2. Calculate depth
 3. Make contract calls
