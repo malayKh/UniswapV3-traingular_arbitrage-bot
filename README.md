@@ -9,9 +9,10 @@ The pairs having surface arbitrage and inspected to have suffiect depth to make 
 contract my running the scripts provided.
 
 ## Scripts to use the bot
-1. **Start pair calculations** : Open the directory named **./Uniswap** and go to ./Uniswap/main.py and run the file in your environment(venv).
+1. **Start pair calculations** : Open the directory named **./Uniswap** and go to ***./Uniswap/main.py*** and run the file in your environment(venv). You can also 
+customize surface rates for calculation by changing the function parameters.
 
-2. **Calculate depth** : Open the directory named **./UniswapJs** and type `node main`. This will calculate the surface rates for you.
+2. **Calculate depth** : Open the directory named **./UniswapJs** and type `node main`. This will calculate the surface rates for you. At the bottom of ***main.js*** file you can get the change the amountin at the ***getDepth()*** function to see if a trade will be profitable with the input provided.
 
 3. **Make contract calls** : Open the **./UniswapV3** director and run `yarn hardhat run scripts/start.ts`, this will automatically select the profitable surface rates
 from you `.json` file and call the contract to execute the swap on the blockchain. The default network has been set to a forked one for hardhat testing. You will
